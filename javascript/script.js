@@ -3,7 +3,7 @@
     function newSong (){
         const importSong = document.getElementById('import');
         importSong.addEventListener('click', addItem);
-    }
+    } newSong();
     function addItem (event) {
         let dialog = document.createElement('dialog');
         let header = document.createElement('header');
