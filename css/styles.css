@@ -1,3 +1,82 @@
+.Containerplayer {
+  position: relative;
+  border-bottom: 2px solid rebeccapurple;
+}
 
+audio {
+  display: none;
+}
+
+h1 {
+  color: #3636b4;
+  text-align: center;
+  margin: 50px;
+}
+
+#playList {
+  border-left: 2px solid rebeccapurple;
+  float: right;
+}
+
+.songName {
+  color: #3636b4;
+  cursor: pointer;
+  margin: 10px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 18px;
+}
+.songName:hover {
+  transition: 0.5s;
+  color: #b48c36;
+}
+
+.player {
+  position: relative;
+  width: 45%;
+  display: inline-block;
+  height: 400px;
+}
+
+#songs, #import, #delete, #edit {
+  height: 40px;
+  width: 110px;
+  margin: 5px;
+  letter-spacing: 3px;
+  background: #3636b4;
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0px solid;
+}
+#songs:hover, #import:hover, #delete:hover, #edit:hover {
+  transition: 0.5s;
+  background: #7f7fff;
+}
+
+#delete {
+  background: #3db6b6;
+  color: white;
+}
+#delete:hover {
+  background: #e02727;
+}
+
+#edit {
+  background: #b63db0;
+}
+#edit:hover {
+  background: #5d740a;
+}
+
+#sortSongs {
+  padding: 10px;
+  color: white;
+  background: #7f7fff;
+  height: 40px;
+  font-size: 20px;
+}
 
 /*# sourceMappingURL=styles.css.map */

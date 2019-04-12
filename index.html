@@ -10,10 +10,12 @@
 <body>
   <div class="main__content">
     <div class="main__buttons">
-      <button class="songs">Songs</button>
-      <button class="import" id="import">Import</button>
+      <button id="songs">Songs</button>
+      <button class="import" id="import">Import</button> 
+      <button id="delete">Delete</button>
+      <button id="edit">Edit</button>
     </div>
-    <div class="dinamic__buttons">
+    <div class="sort">
       <select name="sort" id="sortSongs">
         <option value="Name">Name</option>
         <option value="Artist">Artist</option>
@@ -22,10 +24,20 @@
         <option value="Starts">Starts</option>
         <option value="Album">Album</option>
       </select>
-      <button>Delete</button>
-      <button>Edit</button>
+     
+    </div>
+    <div class="ContainerPlayer">
+      <div id="defaultSongs" class="player">
+        <h1>Drag to the right the songs that you want to listen</h1>
+      </div>
+      <div id="playList" class="player">
+        <h1>Play List</h1>
+      </div>
     </div>
   </div>
-  <script src="javascript/script.js"></script>
+  <script src="javascript/songs.js"></script>
+  <script src="javascript/mediator.js"></script>
+  <script src="javascript/singleton.js"></script>
+  <script src="javascript/playlist.js"></script>
 </body>
 </html>
